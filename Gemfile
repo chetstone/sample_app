@@ -10,11 +10,12 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 
+gem 'pg', '0.15.1'
+
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
-  # gem 'guard-rspec', '2.5.0'
+  gem 'guard-rspec', '2.5.0'
   # gem 'spork-rails', '4.0.0'
   # gem 'guard-spork', '1.5.0'
   # gem 'childprocess', '0.3.6'
@@ -28,7 +29,7 @@ group :test do
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 
   # Uncomment this line on OS X.
-  # gem 'growl', '1.0.3'
+  gem 'growl', '1.0.3'
 
   # Uncomment these lines on Linux.
   # gem 'libnotify', '0.8.0'
@@ -51,6 +52,5 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
